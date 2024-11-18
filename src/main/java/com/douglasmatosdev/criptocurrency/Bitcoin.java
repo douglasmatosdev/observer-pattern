@@ -23,6 +23,7 @@ public class Bitcoin {
     public void setPrice(Double price) {
         if (!this.price.equals(price)) {
             this.price = price;
+            // Notify the observers
             notifyObservers(this.price, price);
         }
     }
@@ -33,6 +34,7 @@ public class Bitcoin {
 
     private void notifyObservers(Double oldPrice, Double newPrice) {
         for (BitcoinPriceObserver observer : observers) {
+            // Notify the observer calling the update method of all observers
             observer.update(oldPrice, newPrice);
         }
     }
