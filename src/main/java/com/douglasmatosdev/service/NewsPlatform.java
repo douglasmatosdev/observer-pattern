@@ -6,7 +6,6 @@ public class NewsPlatform implements BitcoinPriceObserver {
     public void update(Double oldPrice, Double newPrice) {
         // Here we can implement the logic to notify the news platform
         System.out.println("\nNewsPlatform");
-        System.out.println("Old price: " + oldPrice);
-        System.out.println("New price: " + newPrice);
+        System.out.println("Price updated: " + oldPrice + " -> " + newPrice);
     }
 }

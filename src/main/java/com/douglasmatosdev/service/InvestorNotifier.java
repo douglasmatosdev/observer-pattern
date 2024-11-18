@@ -6,7 +6,6 @@ public class InvestorNotifier implements BitcoinPriceObserver {
     public void update(Double oldPrice, Double newPrice) {
         // Here we can implement the logic to notify the investors
         System.out.println("\nInvestorNotifier");
-        System.out.println("Old price: " + oldPrice);
-        System.out.println("New price: " + newPrice);
+        System.out.println("Price updated: " + oldPrice + " -> " + newPrice);
     }
 }
