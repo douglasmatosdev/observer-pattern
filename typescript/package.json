@@ -1,0 +1,24 @@
+{
+  "name": "observer-pattern",
+  "version": "1.0.0",
+  "description": "Case Study of Observer Pattern based on Youtube video",
+  "main": "index.ts",
+  "dependencies": {
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx tsc --project tsconfig.json && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/douglasmatosdev/observer-pattern.git"
+  },
+  "author": "douglasmatodev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasmatosdev/observer-pattern/issues"
+  },
+  "homepage": "https://github.com/douglasmatosdev/observer-pattern#readme"
+}
