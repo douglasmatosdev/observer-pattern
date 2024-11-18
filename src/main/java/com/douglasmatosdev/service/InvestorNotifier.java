@@ -4,10 +4,8 @@ public class InvestorNotifier implements BitcoinPriceObserver {
 
     @Override
     public void update(Double oldPrice, Double newPrice) {
-        if (newPrice > oldPrice) {
-            System.out.println("Price increased! Notify investors!");
-        } else {
-            System.out.println("Price decreased! Notify investors!");
-        }
+        System.out.println("\nInvestorNotifier");
+        System.out.println("Old price: " + oldPrice);
+        System.out.println("New price: " + newPrice);
     }
 }
